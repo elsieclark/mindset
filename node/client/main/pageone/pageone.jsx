@@ -8,13 +8,13 @@ const TitleBlock = require('../../shared/components/titleblock/titleblock.jsx');
 
 
 const PageOne = createClass({
-    
+
     getDefaultProps: function() {
         return {
 
         };
     },
-    
+
     getInitialState: function() {
         return {
             quizData: {},
@@ -65,7 +65,7 @@ const PageOne = createClass({
                 const museData = this.state.museData;
                 museData[msg.timestamp] = msg.value;
             }
-            
+
             if (msg.type === 'quizValue') {
                 this.setState({
                     quizData: msg.value,
@@ -73,15 +73,15 @@ const PageOne = createClass({
             }
         };
     },
-    
+
     renderBars: function() {
         return _.map(this.state.museData, (key, val) => {
             const barStyle = {
                 order: key,
             };
             return <div className='bar'>
-                
-            </div>
+
+            </div>;
         });
     },
 
