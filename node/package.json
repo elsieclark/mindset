@@ -1,0 +1,48 @@
+{
+  "name": "fragment",
+  "version": "0.0.1",
+  "description": "A bootstrapped website template using Node, React, Less, and Vitreum",
+  "main": "server.js",
+  "scripts": {
+    "test": "ava -s -v",
+    "lint": "eslint --fix **/*.{js,jsx}",
+    "lint:dry": "eslint **/*.{js,jsx}",
+    "test:dev": "ava -w",
+    "dev": "node scripts/dev.js",
+    "build": "node scripts/build.js",
+    "prod": "cross-env NODE_ENV=production && npm run build",
+    "postinstall": "npm run build",
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willdavidc/fragment.git"
+  },
+  "author": "Will Clark",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/willdavidc/fragment/issues"
+  },
+  "homepage": "https://github.com/willdavidc/fragment#readme",
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "compression": "^1.7.1",
+    "create-react-class": "^15.6.2",
+    "express": "^4.16.1",
+    "lodash": "^4.17.4",
+    "nconf": "^0.8.5",
+    "node-notifier": "^5.1.2",
+    "open": "0.0.5",
+    "pico-router": "^2.0.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "vitreum": "^4.8.2",
+    "ws": "^3.2.0"
+  },
+  "devDependencies": {
+    "ava": "^0.22.0",
+    "cross-env": "^5.0.5",
+    "eslint": "^4.8.0",
+    "eslint-plugin-react": "^7.4.0"
+  }
+}

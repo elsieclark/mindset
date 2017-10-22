@@ -1,0 +1,55 @@
+.topbar {
+    width: 100%;
+    height: 30px;
+    background-color: #e58200;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 5px 0 #000;
+    z-index: 10;
+    justify-content: space-between;
+    .emptySpace {
+        flex-grow: 1;
+    }
+    .siteName {
+        color: white;
+        font-family: 'Ubuntu';
+        font-size: 26px;
+        margin-left: 15px;
+        font-weight: 300;
+        flex-grow: 0;
+        margin-right: 30px;
+    }
+    .pageLinkList {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        color: white;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+        Link {
+            text-decoration: none;
+        }
+        .pageLink {
+            padding: 0 8px 0 8px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            color: #FFF;
+            text-decoration: none;
+            &:visited {
+                color: white;
+            }
+            &:hover {
+                background-color: #FFF;
+                color: @bg-blue;
+            }
+            &.activePage {
+                background-color: #FFF;
+                color: @bg-blue;
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+  "entryPoints": {
+    "main": "./client/main/main.jsx"
+  },
+  "assets": [
+    "*.svg",
+    "*.png",
+    "*.jpg",
+    "*.otf",
+    "*.woff",
+    "*.ico",
+    "*.ttf"
+  ],
+  "shared": [
+    "./client"
+  ],
+  "libs": [
+    "react",
+    "react-dom",
+    "create-react-class",
+    "lodash",
+    "classnames",
+    "pico-router"
+  ]
+}
