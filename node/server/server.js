@@ -5,6 +5,7 @@ const notifier    = require('node-notifier');
 const WebSocket   = require('ws');
 const compression = require('compression');
 const express     = require('express');
+const request     = require('request');
 const app         = express();
 
 app.use(compression());
@@ -102,3 +103,48 @@ setInterval(() => {
         }
     });
 }, 300000);
+
+const formData = {
+    from: 1508671000
+};
+
+setInterval(() => {
+    notifier.notify({
+        title: 'You are notified!',
+        message: 'This is a notification.',
+        wait: true,
+        closeLabel: 'Dismiss',
+        actions: 'Open',
+    }, (err, response, meta) => {
+        if (response === 'activate') {
+            open('http://localhost:8000/quiz');
+        }
+    });
+}, 300000);
+
+const reqFunc = () => {
+    request
+        .post({ url: 'http://165.227.46.196:4245/get_data/', formData }, (err, response, body) => {
+            if (err) {
+                console.log('POST error', err);
+                return;
+            }
+            let msg;
+            try {
+                msg = JSON.parse(body);
+            } catch (e) {
+                console.log('JSON error:', e);
+                return;
+            }
+            console.log('Recieved', msg.data.length);
+            let timestamp = msg.firstTimestamp;
+                _.forEach(msg.data, (datum) => {
+                    museData[timestamp] = datum;
+                    timestamp += 20;
+                });
+        });
+}
+
+setInterval(reqFunc, 20000);
+reqFunc();
+
