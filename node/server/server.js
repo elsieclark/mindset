@@ -11,19 +11,19 @@ app.use(compression());
 app.use(express.static(`${__dirname}/../build`));
 
 config.argv()
-	.env({lowerCase: true})
-	.file('environment', {file: `config/${process.env.NODE_ENV}.json`})
-	.file('defaults', {file: 'config/default.json'});
+    .env({ lowerCase: true })
+    .file('environment', { file: `config/${process.env.NODE_ENV}.json` })
+    .file('defaults', { file: 'config/default.json' });
 
 const pageTemplate = require('./page.template.js');
 const render = require('vitreum/steps/render');
 
-app.get('*', (req, res)=>{
-	render('main', pageTemplate, {
-		url : req.url
-	})
-		.then((page)=>res.send(page))
-		.catch((err)=>console.log(err));
+app.get('*', (req, res) => {
+    render('main', pageTemplate, {
+        url: req.url
+    })
+        .then((page) => res.send(page))
+        .catch((err) => console.log(err));
 });
 
 const PORT = config.get('port');
@@ -35,7 +35,7 @@ const wss = new WebSocket.Server({ port: 8080 });
 const quizData = {};
 const museData = {};
 
-const handleClientMessage = 
+const handleClientMessage =
 
 wss.on('connection', (ws) => {
     ws.on('message', (message, client) => {
@@ -51,7 +51,7 @@ wss.on('connection', (ws) => {
         if (msg.type === 'quiz') {
             const d = new Date;
             const timestamp = Math.round(d.getTime() / (1000 * 3600));
-            const average = msg.value.reduce((sum, val) => { return sum + val}, 0) / msg.value.length;
+            const average = msg.value.reduce((sum, val) => { return sum + val;}, 0) / msg.value.length;
             museData[timestamp] = average;
             console.log('Quiz result:', timestamp, average);
         }
@@ -82,9 +82,9 @@ wss.on('connection', (ws) => {
             };
             ws.send(JSON.stringify(reply));
         }
-        
+
     });
-    
+
     //ws.send('something')
 });
 

@@ -14,7 +14,7 @@ const MainPage = require('../shared/mainpage/mainpage.jsx');
 const LowBar   = require('../shared/lowbar/lowbar.jsx');
 
 const Router = createRouter({
-	'/': <PageOne />,
+    '/': <PageOne />,
     '/two': <PageTwo />,
     '/quiz': <Quiz />,
     '/*': <MainPage><FourOhFour /></MainPage>
@@ -32,19 +32,19 @@ const navBarLinks = [
 ];
 
 const Main = createClass({
-    
-	getDefaultProps : function() {
-		return {
+
+    getDefaultProps: function() {
+        return {
             url: '/'
-		};
-	},
-    
+        };
+    },
+
     getInitialState: function() {
         return {
             connection: null
         };
     },
-    
+
     componentDidMount: function() {
         /*if (!WebSocket) {
             return; // Don't do this on the server
@@ -58,15 +58,15 @@ const Main = createClass({
         connection.onmessage = (a,b) => {
             console.log(a.data);
         };*/
-        
+
     },
-    
-	render : function() {
-		return <div className='main'>
+
+    render: function() {
+        return <div className='main'>
             <TopBar pages={navBarLinks} />
-			<Router defaultUrl={this.props.url} />
-		</div>
-	}
+            <Router defaultUrl={this.props.url} />
+        </div>;
+    }
 });
 
 module.exports = Main;

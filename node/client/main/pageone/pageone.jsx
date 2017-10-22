@@ -8,29 +8,29 @@ const TitleBlock = require('../../shared/components/titleblock/titleblock.jsx');
 
 
 const PageOne = createClass({
-	getDefaultProps : function(){
-		return {
+    getDefaultProps: function() {
+        return {
 
-		};
-	},
-    
+        };
+    },
+
     componentDidMount: function() {
         if (!WebSocket) {
             return;
         }
         const connection = new WebSocket(`ws://${location.host.split(':')[0]}:8080`);
         this.setState({ connection });
-        
+
         connection.onMessage = ({
-            
-        })
+
+        });
     },
-    
-	render : function(){
-		return <div className='pageone'>
-                
-            </div>
-	}
+
+    render: function() {
+        return <div className='pageone'>
+
+        </div>;
+    }
 });
 
 module.exports = PageOne;

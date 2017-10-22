@@ -8,16 +8,16 @@ const TitleBlock = require('../../shared/components/titleblock/titleblock.jsx');
 
 
 const PageTwo = createClass({
-	getDefaultProps : function(){
-		return {
+    getDefaultProps: function() {
+        return {
 
-		};
-	},
-	render : function(){
-		return <div className='pagetwo'>
-                
-            </div>
-	}
+        };
+    },
+    render: function() {
+        return <div className='pagetwo'>
+
+        </div>;
+    }
 });
 
 module.exports = PageTwo;

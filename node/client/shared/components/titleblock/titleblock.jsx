@@ -3,7 +3,7 @@ const createClass = require('create-react-class');
 const React       = require('react');
 
 const TitleBlock = createClass({
-    
+
     render: function() {
         return (
             <div className='titleBlock'>
@@ -12,7 +12,7 @@ const TitleBlock = createClass({
             </div>
         );
     },
-    
+
 });
 
 module.exports = TitleBlock;

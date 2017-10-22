@@ -1,6 +1,6 @@
 
-module.exports = (vitreum)=>{
-	return `<html>
+module.exports = (vitreum) => {
+    return `<html>
 	<head>
         <meta name="viewport" content="width=device-width, user-scalable=no">
 		<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />

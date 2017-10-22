@@ -4,16 +4,16 @@ const React       = require('react');
 
 
 const Fourohfour = createClass({
-	getDefaultProps: function(){
-		return {
+    getDefaultProps: function() {
+        return {
 
-		};
-	},
-	render: function(){
-		return <div className='fourohfour'>
+        };
+    },
+    render: function() {
+        return <div className='fourohfour'>
 			Fourohfour Component Ready.
-		</div>;
-	}
+        </div>;
+    }
 });
 
 module.exports = Fourohfour;
