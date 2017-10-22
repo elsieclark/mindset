@@ -89,19 +89,16 @@ wss.on('connection', (ws) => {
 });
 
 
-
-
-
-/*
-notifier.notify({
-    title: 'You are notified!',
-    message: 'This is a notification.',
-    wait: true,
-    closeLabel: 'Dismiss',
-    actions: 'Open',
-}, (err, response, meta) => {
-    if (response === 'activate') {
-        open('http://www.google.com/');
-    }
-});
-*/
+setInterval(() => {
+    notifier.notify({
+        title: 'You are notified!',
+        message: 'This is a notification.',
+        wait: true,
+        closeLabel: 'Dismiss',
+        actions: 'Open',
+    }, (err, response, meta) => {
+        if (response === 'activate') {
+            open('http://localhost:8000/quiz');
+        }
+    });
+}, 300000);

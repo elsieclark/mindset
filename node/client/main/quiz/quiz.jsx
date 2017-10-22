@@ -18,7 +18,7 @@ const generateQuestion = function() {
     }
 };
 
-const QUESTIONS = 2;
+const QUESTIONS = 10;
 
 const Quiz = createClass({
     getDefaultProps: function() {
