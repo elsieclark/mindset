@@ -46,7 +46,7 @@ const Main = createClass({
     },
     
     componentDidMount: function() {
-        if (!WebSocket) {
+        /*if (!WebSocket) {
             return; // Don't do this on the server
         }
         const connection = new WebSocket(`ws://${location.host.split(':')[0]}:8080`);
@@ -57,7 +57,7 @@ const Main = createClass({
         
         connection.onmessage = (a,b) => {
             console.log(a.data);
-        };
+        };*/
         
     },
     

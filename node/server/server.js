@@ -32,15 +32,65 @@ console.log(`server on port:${PORT}`);
 
 const wss = new WebSocket.Server({ port: 8080 });
 
-const handleClientMessage = (message, client) => {
-    console.log('Recieved message', message);
-};
+const quizData = {};
+const museData = {};
+
+const handleClientMessage = 
 
 wss.on('connection', (ws) => {
-    ws.on('message', handleClientMessage);
+    ws.on('message', (message, client) => {
+        let msg;
+        try {
+            msg = JSON.parse(message);
+        } catch (e) {
+            console.log('Error parsing JSON:', e);
+            return;
+        }
+        console.log('Recieved message', msg);
+
+        if (msg.type === 'quiz') {
+            const d = new Date;
+            const timestamp = Math.round(d.getTime() / (1000 * 3600));
+            const average = msg.value.reduce((sum, val) => { return sum + val}, 0) / msg.value.length;
+            museData[timestamp] = average;
+            console.log('Quiz result:', timestamp, average);
+        }
+
+        if (msg.type === 'muse') {
+            let timestamp = msg.firstTimestamp;
+            _.forEach(msg.data, (datum) => {
+                museData[timestamp] = datum;
+                timestamp += 20;
+            });
+        }
+
+        if (msg.type === 'client') {
+            _.forEach(museData, (value, timestamp) => {
+                if (timestamp <= msg.timestamp) {
+                    return;
+                }
+                const reply = {
+                    type: 'museValue',
+                    timestamp: timestamp,
+                    value,
+                };
+                ws.send(JSON.stringify(reply));
+            });
+            const reply = {
+                type: 'quizValue',
+                value: quizData,
+            };
+            ws.send(JSON.stringify(reply));
+        }
+        
+    });
     
     //ws.send('something')
 });
+
+
+
+
 
 /*
 notifier.notify({

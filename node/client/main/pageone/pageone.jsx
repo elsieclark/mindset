@@ -13,6 +13,19 @@ const PageOne = createClass({
 
 		};
 	},
+    
+    componentDidMount: function() {
+        if (!WebSocket) {
+            return;
+        }
+        const connection = new WebSocket(`ws://${location.host.split(':')[0]}:8080`);
+        this.setState({ connection });
+        
+        connection.onMessage = ({
+            
+        })
+    },
+    
 	render : function(){
 		return <div className='pageone'>
                 

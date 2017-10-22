@@ -99,7 +99,7 @@ const Quiz = createClass({
                 type: 'quiz',
                 value: this.state.results,
             };
-            this.state.connection.send(message);
+            this.state.connection.send(JSON.stringify(message));
         }
     },
     
