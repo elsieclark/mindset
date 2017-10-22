@@ -1,0 +1,26 @@
+import requests
+import time
+import json
+end_time = 300*int(time.time()/300)
+points = 50
+for i in range(points):
+   print i
+   end_increment = end_time - points*300 + (i)*300
+   minute = (end_increment%(3600))/60
+   second = (end_increment%(60))
+   hour = -4 + (end_increment%(60*60*12)/(60*60))
+   try:
+      data = requests.post('http://165.227.46.196:4245/get_data/', data={'mins':5, 'to':end_i-1ncrement})
+      print "got data"
+      content = json.loads(data.content)
+      alpha = sum(map(lambda x: float(x['alpha']), content['data']))
+      beta = sum(map(lambda x: float(x['beta']), content['data']))
+      delta = sum(map(lambda x: float(x['delta']), content['data']))
+      gamma = sum(map(lambda x: float(x['gamma']), content['data']))
+      theta = sum(map(lambda x: float(x['theta']), content['data']))
+      print "time: " + str(hour) + " " + str(minute) + " " + str(second)
+      print alpha, beta, delta, gamma, theta
+   except Exception as e:
+      print "error: " + str(e)
+      print "time: " + str(hour) + " " + str(minute) + " " + str(second)
+      print "does not have increment "

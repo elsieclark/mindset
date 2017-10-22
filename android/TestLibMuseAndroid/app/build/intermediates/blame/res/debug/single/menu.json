@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/2017-A/Dropbox/projects/hackathon/mindset/android/TestLibMuseAndroid/app/build/intermediates/res/merged/debug/menu/main.xml",
+        "source": "/Users/2017-A/Dropbox/projects/hackathon/mindset/android/TestLibMuseAndroid/app/src/main/res/menu/main.xml"
+    },
+    {
+        "merged": "/Users/2017-A/Dropbox/android/TestLibMuseAndroid/app/build/intermediates/res/merged/debug/menu/main.xml",
+        "source": "/Users/2017-A/Dropbox/android/TestLibMuseAndroid/app/src/main/res/menu/main.xml"
+    }
+]

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/2017-A/Dropbox/projects/hackathon/mindset/android/TestLibMuseAndroid/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.3.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="/Users/2017-A/Dropbox/projects/hackathon/mindset/android/TestLibMuseAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.3.1_83845769539e96377821d3451d2b4ace7956b789/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/2017-A/Dropbox/projects/hackathon/mindset/android/TestLibMuseAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
+        <dex dex="/Users/2017-A/Dropbox/projects/hackathon/mindset/android/TestLibMuseAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-8.4.0_d12026414489ac53231971144e61eeea4a0198bc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/2017-A/Dropbox/projects/hackathon/mindset/android/TestLibMuseAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="/Users/2017-A/Dropbox/projects/hackathon/mindset/android/TestLibMuseAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-8.4.0_9ca824c2ab9650ce2ce75b62cdbb15ebf2221bfb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/2017-A/Dropbox/projects/hackathon/mindset/android/TestLibMuseAndroid/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.3.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="/Users/2017-A/Dropbox/projects/hackathon/mindset/android/TestLibMuseAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.3.1_3320d6e06172f3934280685696d7b122aca1998d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/2017-A/Dropbox/projects/hackathon/mindset/android/TestLibMuseAndroid/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.3.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="/Users/2017-A/Dropbox/projects/hackathon/mindset/android/TestLibMuseAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.3.1_e04c727c00f7ea3eac75a07edec9424a7918fbb3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/2017-A/Dropbox/projects/hackathon/mindset/android/TestLibMuseAndroid/app/libs/libmuse_android.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="39ceeabf18cb8dc419db709a0fd4d26169a1126a">
+        <dex dex="/Users/2017-A/Dropbox/projects/hackathon/mindset/android/TestLibMuseAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/2/libmuse_android_4c42951721ae342ee20bd1dddaea8e5a8e5ffb2c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/2017-A/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="/Users/2017-A/Dropbox/projects/hackathon/mindset/android/TestLibMuseAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.3.1_a636cccb211dc6e404b5b383eb7b0d8d6da99fd2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/2017-A/Dropbox/projects/hackathon/mindset/android/TestLibMuseAndroid/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7803f0211824afc9279174f7aa5aab5472cfafe0">
+        <dex dex="/Users/2017-A/Dropbox/projects/hackathon/mindset/android/TestLibMuseAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_5901b904fff7bcbdbee82fcc8c0b1b20afd17afe/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/2017-A/Dropbox/projects/hackathon/mindset/android/TestLibMuseAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
+        <dex dex="/Users/2017-A/Dropbox/projects/hackathon/mindset/android/TestLibMuseAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-8.4.0_a6bc1377e319ca889155d8a3094d37031e1a668e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/2017-A/Dropbox/projects/hackathon/mindset/android/TestLibMuseAndroid/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="18b14d109d9df82b2c3c92cc1125485abe7fca6c">
+        <dex dex="/Users/2017-A/Dropbox/projects/hackathon/mindset/android/TestLibMuseAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_c56e785f96ebcfcaae4d0e01d111ff1f1dd90622/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/2017-A/Dropbox/projects/hackathon/mindset/android/TestLibMuseAndroid/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/2017-A/Dropbox/projects/hackathon/mindset/android/TestLibMuseAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.3.1_584753b9d1e81ae3579104809884b2a47452d0e8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/2017-A/Dropbox/projects/hackathon/mindset/android/TestLibMuseAndroid/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.3.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="/Users/2017-A/Dropbox/projects/hackathon/mindset/android/TestLibMuseAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.3.1_4fe3f26ea23f57f813628ea483dae3cfad994021/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/2017-A/Dropbox/projects/hackathon/mindset/android/TestLibMuseAndroid/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.3.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="/Users/2017-A/Dropbox/projects/hackathon/mindset/android/TestLibMuseAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.3.1_ea7296651c574c2c0ef44921a64dff2453a81f6e/classes.dex" />
+    </item>
+
+</items>

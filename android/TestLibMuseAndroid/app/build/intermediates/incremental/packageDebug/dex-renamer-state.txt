@@ -1,0 +1,7 @@
+#Sat Oct 21 23:14:08 EDT 2017
+base.0=/Users/2017-A/Dropbox/projects/hackathon/mindset/android/TestLibMuseAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_c56e785f96ebcfcaae4d0e01d111ff1f1dd90622
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/Users/2017-A/Dropbox/projects/hackathon/mindset/android/TestLibMuseAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_5901b904fff7bcbdbee82fcc8c0b1b20afd17afe/classes.dex
+base.1=/Users/2017-A/Dropbox/projects/hackathon/mindset/android/TestLibMuseAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_5901b904fff7bcbdbee82fcc8c0b1b20afd17afe
+file.0=/Users/2017-A/Dropbox/projects/hackathon/mindset/android/TestLibMuseAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_c56e785f96ebcfcaae4d0e01d111ff1f1dd90622/classes.dex
